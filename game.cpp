@@ -72,17 +72,17 @@ void Game::run(Graphics& graphics) {
 
     dino.sprite.init(graphics.dinoTexture, DINO_FRAMES, DINO_CLIPS);
 
-    backgroundMusic = Music::loadMusic("music.mp3");
-    Music::playMusic(backgroundMusic);
+    backgroundMusic = music.loadMusic("music.mp3");
+    music.playMusic(backgroundMusic);
 
-    jumpSound = Music::loadSound("jump.mp3");
+    jumpSound = music.loadSound("jump.mp3");
 
     while (running) {
         while (SDL_PollEvent(&event)) {
             if (event.type == SDL_QUIT) running = false;
             if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
                 jump();
-                Music::playSound(jumpSound);
+                music.playSound(jumpSound);
             }
         }
 
@@ -97,6 +97,7 @@ void Game::run(Graphics& graphics) {
             if (score % 5 == 0 && obstacleSpeed <= 25) {
                 obstacleSpeed += 1;
             }
+
         }
 
         if (checkCollision()) {

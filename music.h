@@ -5,10 +5,10 @@
 #include <SDL_log.h>
 
 struct Music {
-    static Mix_Music* loadMusic(const char* path);
-    static void playMusic(Mix_Music* gMusic);
-    static Mix_Chunk* loadSound(const char* path);
-    static void playSound(Mix_Chunk* gChunk);
+    Mix_Music* loadMusic(const char* path);
+    void playMusic(Mix_Music* gMusic);
+    Mix_Chunk* loadSound(const char* path);
+    void playSound(Mix_Chunk* gChunk);
 };
 
 #endif

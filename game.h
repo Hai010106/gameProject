@@ -30,6 +30,7 @@ private:
     Obstacle obstacle;
     int score;
     int obstacleSpeed;
+    Music music;
     Mix_Music* backgroundMusic;
     Mix_Chunk* jumpSound;
     bool checkCollision();
