@@ -46,7 +46,7 @@ void Game::jump() {
 
 bool Game::checkCollision() {
     SDL_Rect dinoRect = {dino.x, dino.y, 100, 100};
-    SDL_Rect obstacleRect = {obstacle.x, obstacle.y, 50, 50};
+    SDL_Rect obstacleRect = {obstacle.x, obstacle.y, 100, 100};
     return SDL_HasIntersection(&dinoRect, &obstacleRect);
 }
 
