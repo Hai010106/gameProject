@@ -54,6 +54,7 @@ void Game::render(Graphics& graphics) {
     SDL_SetRenderDrawColor(graphics.renderer, 255, 255, 255, 255);
     SDL_RenderClear(graphics.renderer);
 
+
     SDL_Rect bgRect = {0, 0, SCREEN_WIDTH, SCREEN_HEIGHT};
     SDL_RenderCopy(graphics.renderer, graphics.backgroundTexture, nullptr, &bgRect);
 
@@ -89,7 +90,7 @@ void Game::run(Graphics& graphics) {
         dino.update();
 
         obstacle.x -= obstacleSpeed;
-        if (obstacle.x < -50) {
+        if (obstacle.x < -100) {
             obstacle.x = SCREEN_WIDTH + rand() % 300;
             score++;
             system("cls");

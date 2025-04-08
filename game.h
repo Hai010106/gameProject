@@ -12,8 +12,8 @@ struct Dino {
     bool isJumping;
     Sprite sprite;
     int frameCounter;
-    Dino();
     void update();
+    Dino();
 };
 
 struct Obstacle {
@@ -22,8 +22,8 @@ struct Obstacle {
 };
 
 struct Game {
-    Game();
     void run(Graphics& graphics);
+    Game();
 
 private:
     Dino dino;

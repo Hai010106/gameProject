@@ -14,7 +14,6 @@ struct Sprite {
     SDL_Texture* texture;
     vector<SDL_Rect> clips;
     int currentFrame = 0;
-
     void init(SDL_Texture* _texture, int frames, const int _clips[][4]);
     void tick();
     const SDL_Rect* getCurrentClip() const;
@@ -24,7 +23,6 @@ struct Graphics {
     Graphics();
     bool init();
     void quit();
-
     SDL_Window* window;
     SDL_Renderer* renderer;
     SDL_Texture* dinoTexture;

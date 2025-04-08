@@ -1,13 +1,13 @@
 # depslib dependency file v1.0
-1744097442 source:c:\users\admin\documents\lap_trinh_nang_cao\gameproject\game.cpp
+1744129072 source:c:\users\admin\documents\lap_trinh_nang_cao\gameproject\game.cpp
 	"game.h"
 	"music.h"
 
-1744097442 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\game.h
+1744129702 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\game.h
 	"graphics.h"
 	"music.h"
 
-1744018725 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\graphics.h
+1744098570 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\graphics.h
 	<iostream>
 	<SDL.h>
 	<SDL_image.h>
@@ -17,11 +17,11 @@
 
 1744018841 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\defs.h
 
-1744097442 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\music.h
+1744098003 c:\users\admin\documents\lap_trinh_nang_cao\gameproject\music.h
 	<SDL_mixer.h>
 	<SDL_log.h>
 
-1744018725 source:c:\users\admin\documents\lap_trinh_nang_cao\gameproject\graphics.cpp
+1744098570 source:c:\users\admin\documents\lap_trinh_nang_cao\gameproject\graphics.cpp
 	"graphics.h"
 	"music.h"
 

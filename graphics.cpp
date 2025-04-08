@@ -3,7 +3,6 @@
 
 void Sprite::init(SDL_Texture* _texture, int frames, const int _clips[][4]) {
     texture = _texture;
-
     SDL_Rect clip;
     for (int i = 0; i < frames; i++) {
         clip.x = _clips[i][0];
@@ -32,7 +31,6 @@ Graphics::Graphics() {
 
 SDL_Texture* Graphics::loadTexture(const char *filename) {
     SDL_LogMessage(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO, "Loading %s", filename);
-
     SDL_Texture *texture = IMG_LoadTexture(renderer, filename);
     if (!texture) {
         SDL_LogMessage(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_ERROR, "Failed to load texture %s: %s", filename, IMG_GetError());
@@ -67,7 +65,6 @@ bool Graphics::init() {
     if (!dinoTexture || !obstacleTexture || !backgroundTexture) {
         return false;
     }
-
     return true;
 }
 
