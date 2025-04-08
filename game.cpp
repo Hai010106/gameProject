@@ -92,6 +92,7 @@ void Game::run(Graphics& graphics) {
         if (obstacle.x < -50) {
             obstacle.x = SCREEN_WIDTH + rand() % 300;
             score++;
+            system("cls");
             cout << "Score: " << score << endl;
             if (score % 5 == 0 && obstacleSpeed <= 25) {
                 obstacleSpeed += 1;
