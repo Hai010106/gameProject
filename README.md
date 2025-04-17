@@ -1,4 +1,4 @@
 # gameProject
  dinosaur
 
-![ảnh 1](image/img1.png)
+![ảnh 1](/img1.png)
